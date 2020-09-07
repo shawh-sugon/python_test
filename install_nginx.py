@@ -12,9 +12,9 @@ if os.getuid() != 0:
 
 # http://nginx.org/download/nginx-1.13.11.tar.gz
 
-def_var = '1.13.11'
+def_var = '1.19.0'
 
-var = input('请输入版本(默认{}):'.format(def_var))
+var = input('请输入版本(默认{}):'.format(def_var)) or def_var
 
 var = var or def_var
 
@@ -22,7 +22,7 @@ var = var or def_var
 
 def_path = '/usr/local/nginx'
 
-path = input('请输入安装目录(默认{}):'.format(def_path))
+path = input('请输入安装目录(默认{}):'.format(def_path)) or def_path
 
 path = path or def_path
 

@@ -21,5 +21,5 @@ cmd_list =[
 for cmd in cmd_list:
     res = os.system(cmd)
     if res != 0:
-        print(cmd,'失败')
+        print cmd,'失败'
         sys.exit(1)
